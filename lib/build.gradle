@@ -1,0 +1,25 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
+}
+
+testing {
+    suites {
+        test {
+            useJUnitJupiter('5.10.3')
+        }
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
