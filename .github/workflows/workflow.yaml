@@ -2,6 +2,7 @@ name: Gradle Test Workflow
 
 on:
   pull_request:
+  push:
 
 jobs:
   build-and-test:
